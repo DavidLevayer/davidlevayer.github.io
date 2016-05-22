@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Boucherie Levayer</title>
+
+    <script type="text/javascript" src="{{ "/js/jquery-2.2.1.min.js" | prepend: site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ "js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+    <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | prepend: site.baseurl }}"/>
+    <link rel="stylesheet" href="{{ "css/font-awesome.min.css" | prepend: site.baseurl }}"/>
+
+    <script type="text/javascript" src="{{ "js/main.js" | prepend: site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ "js/quote.js" | prepend: site.baseurl }}"></script>
+
+    <link rel="stylesheet" href="{{ "css/global.css" | prepend: site.baseurl }}"/>
+    <link rel="stylesheet" href="{{ "css/main.css" | prepend: site.baseurl }}"/>
+    <link rel="stylesheet" href="{{ "css/image.css" | prepend: site.baseurl }}"/>
+    <link rel="stylesheet" href="{{ "css/footer.css" | prepend: site.baseurl }}"/>
+
+    <link rel="icon" type="image/x-icon" href="{{ "img/teteporc.jpg" | prepend: site.baseurl }}"/>
+</head>
+<body>
+
+    {% include navbar.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+</body>
+</html>

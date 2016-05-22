@@ -1,23 +1,97 @@
 ---
-layout: default
+layout: base
 ---
 
-<div class="home">
+<link rel="stylesheet" href="{{ "css/home.css" | prepend: site.baseurl }}"/>
 
-  <h1 class="page-heading">Posts</h1>
+<div id="header-big-imgs" data-num-img="{{ site.data.home-carousel | size }}"
+{% for image in site.data.home-carousel %}
+data-img-src-{{ forloop.index | minus: 1 }}="{{ image.path }}"
+data-img-desc-{{ forloop.index | minus: 1 }}="{{ image.desc }}"
+{% endfor %}
+></div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<header class="header-section has-img">
+    <div class="big-img intro-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 carousel-size">
+                    <div class="page-heading">
+                        <h1>Boucherie Levayer</h1>
+                        <hr class="small">
+                        <span class="page-subheading">Boucherie ● Charcuterie ● Traiteur</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class='img-desc'></span>
+    </div>
+</header>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+<div class="container">
+    <div class="intro-header">
+        <div class="post-heading text-center">
+            <h1>Bienvenue sur notre site</h1>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+            <p class="post-subheading blockquote">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dui lorem, vehicula id egestas.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-xs-4 post">
+        <div class="col-sm12 hidden-xs polaroid rotate-left" style="height: 300px;">
+            <img class="image" src="{{ "img/specialties/crique.jpg" | preprend: site.baseurl }}"/>
+        </div>
+
+        <div class="col-xs-12">
+
+            <div class="post-entry below">
+                <h3 class="text-center">Lorem ipsum dolor</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dui lorem, vehicula id egestas
+                    finibus, blandit at enim. Integer nec sapien in lorem dictum dictum a sit amet est. Donec
+                    elementum, nunc quis ultrices fringilla, mauris neque mattis enim, vitae laoreet odio velit id
+                    diam. Ut vitae dignissim velit.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-4 post">
+        <div class="col-sm12 hidden-xs polaroid rotate-right" style="height: 300px;">
+            <img class="image" src="{{ "img/specialties/marron-plat.jpg" | prepend: site.baseurl }}"/>
+        </div>
+
+        <div class="col-xs-12">
+
+            <div class="post-entry below">
+                <h3 class="text-center">Lorem ipsum dolor</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dui lorem, vehicula id egestas
+                    finibus, blandit at enim. Integer nec sapien in lorem dictum dictum a sit amet est. Donec
+                    elementum, nunc quis ultrices fringilla, mauris neque mattis enim, vitae laoreet odio velit id
+                    diam. Ut vitae dignissim velit.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-4 post">
+        <div class="col-sm12 hidden-xs polaroid rotate-left" style="height: 300px;">
+            <img class="image" src="{{ "img/specialties/vins.jpg" | prepend: site.baseurl }}"/>
+        </div>
+
+        <div class="col-xs-12">
+
+            <div class="post-entry below">
+                <h3 class="text-center">Lorem ipsum dolor</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dui lorem, vehicula id egestas
+                    finibus, blandit at enim. Integer nec sapien in lorem dictum dictum a sit amet est. Donec
+                    elementum, nunc quis ultrices fringilla, mauris neque mattis enim, vitae laoreet odio velit id
+                    diam. Ut vitae dignissim velit.
+                </p>
+            </div>
+        </div>
+    </div>
 
 </div>

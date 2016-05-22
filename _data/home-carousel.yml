@@ -1,0 +1,29 @@
+- path: 'img/home/carousel/boucherie-interieur.jpg'
+  desc: 'Bienvenue dans la boutique !'
+
+- path: 'img/home/carousel/traiteur1.jpg'
+  desc: 'Toast de foie gras'
+
+- path: 'img/home/carousel/caillettes.jpg'
+  desc: 'Caillettes sorties du four'
+
+- path: 'img/home/carousel/pates-preparation.jpg'
+  desc: 'Préparation des pâtés'
+
+- path: 'img/home/carousel/traiteur3.jpg'
+  desc: 'Assiètes de viande et de charcuterie'
+
+- path: 'img/home/carousel/pates.jpg'
+  desc: 'Pâtés avant cuisson'
+
+- path: 'img/home/carousel/saucisses.jpg'
+  desc: 'Découpage des merguez'
+
+- path: 'img/home/carousel/tapenades.jpg'
+  desc: 'Tapenades artisanales'
+
+- path: 'img/home/carousel/terrine-conserves.jpg'
+  desc: 'Terrines en conserve'
+
+- path: 'img/home/carousel/traiteur2.jpg'
+  desc: 'Assiète de charcuterie'

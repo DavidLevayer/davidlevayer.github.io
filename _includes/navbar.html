@@ -1,0 +1,55 @@
+<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><i class="fa fa-cutlery icon-left"></i>Boucherie Levayer</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="{{ "/home" }}">Accueil</a>
+                </li>
+                <li>
+                    <a href="#">Artisan</a>
+                </li>
+                <li class="navlinks-container">
+                    <a class="navlinks-parent" href="#">Viandes</a>
+                    <div class="navlinks-children">
+                        <a href="#fin-gras">Fin gras du Mezenc</a>
+                        <a href="#porc-rosa">Porc Rosa</a>
+                        <a href="#poulet-fermier">Poulet fermier</a>
+                    </div>
+                </li>
+                <li class="navlinks-container">
+                    <a class="navlinks-parent" href="#">Spécialités</a>
+                    <div class="navlinks-children">
+                        <a href="#caillette">Caillette</a>
+                        <a href="#mignon-vallon">Mignon de Vallon</a>
+                        <a href="#">Et bien plus !</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="avatar-container">
+            <div class="avatar-img-border">
+                <a href="http://daattali.github.io/beautiful-jekyll ">
+                    <img class="avatar-img" src="{{ "img/teteporc.jpg" | preprend: site.baseurl }}"/>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+</nav>

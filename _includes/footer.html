@@ -1,38 +1,94 @@
-<footer class="site-footer">
+<script type="text/javascript">
+function initMap() {
 
-  <div class="wrapper">
+    var myLatLng = {lat: 44.406878, lng: 4.394075};
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 16,
+        center: myLatLng
+    });
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Boucherie Levayer'
+    });
+}
+</script>
 
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+async defer></script>
 
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
+<footer id="contact">
+    <div class="container">
+        <div class="row">
 
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
+            <div id="map" class="col-sm-5 col-sm-offset-1 hidden-xs contact-map"></div>
+
+            <div class="col-sm-5 col-md-offset-0 col-xs-10 col-xs-offset-2  footer-links">
+                <div>
+                    <h4>Boucherie Levayer - SARL Flodatom</h4>
+                </div>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </td>
+                            <td>
+                                <a target="_blank" href="https://www.google.com/maps/place/Boucherie+Levayer/@44.406928,4.394361,18z/data=!4m5!3m4!1s0x0:0x7fc637f2cc96ed35!8m2!3d44.4067821!4d4.3940906?hl=fr-FR">
+                                    14 rue Roger Salengro<br>
+                                    07150 Vallon Pont d'Arc<br>
+                                    France
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </td>
+                            <td>
+                                <span>04 75 88 02 23</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-at fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </td>
+                            <td>
+                                <a href="mailto:alainlevayer@gmail.com">alainlevayer@gmail.com</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </td>
+                            <td>
+                                <span>Coming soon!</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="copyright text-muted">
+                © David Levayer • 2016 • Theme inspired by <a target="_blank" href="https://github.com/daattali/beautiful-jekyll">beautiful-jekyll</a>
+            </div>
+        </div>
     </div>
-
-  </div>
-
 </footer>
