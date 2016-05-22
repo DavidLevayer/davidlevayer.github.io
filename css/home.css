@@ -1,0 +1,21 @@
+
+@media(max-width:767px){
+    .carousel-size {
+        min-height: 200px;
+    }
+}
+@media(min-width:768px){
+    .carousel-size {
+        min-height: 300px;
+    }
+}
+@media(min-width:992px){
+    .carousel-size {
+        min-height: 400px;
+    }
+}
+@media(min-width:1200px){
+    .carousel-size {
+        min-height: 450px;
+    }
+}

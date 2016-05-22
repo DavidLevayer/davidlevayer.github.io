@@ -1,0 +1,40 @@
+.no-border, .no-border:after {
+    border: none;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.below {
+    margin-top: 40px;
+}
+
+.blockquote > i {
+    color: #CCC;
+}
+
+.icon-left {
+    margin-right: 5px;
+}
+
+.icon-right {
+    margin-left: 5px;
+}
+
+ul.no-bullet {
+    list-style-type: none;
+    padding-left: 0;
+}

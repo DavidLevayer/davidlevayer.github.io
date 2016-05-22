@@ -1,0 +1,22 @@
+.image {
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.polaroid {
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.polaroid.rotate-left {
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+}
+
+.polaroid.rotate-right {
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+}

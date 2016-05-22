@@ -1,0 +1,37 @@
+.contact-map {
+    border: 1px solid #AAA;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.footer-links a:hover, .footer-links a:focus {
+    text-decoration: none;
+}
+
+.footer-links td:first-child {
+    padding: 0;
+}
+
+.footer-links tr {
+    background: inherit;
+}
+
+.footer-links tr:hover {
+    color: #A00003;
+}
+
+.footer-links tr, .footer-links td {
+    border: none;
+}
+
+.footer-links span.fa-stack {
+    font-size: 80%;
+}
+
+.text-muted {
+    color: #DDD;
+}
+
+.text-muted a {
+    color: #DDD;
+}
