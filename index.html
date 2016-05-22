@@ -2,8 +2,6 @@
 layout: base
 ---
 
-<link rel="stylesheet" href="{{ "css/home.css" | prepend: site.baseurl }}"/>
-
 <div id="header-big-imgs" data-num-img="{{ site.data.home-carousel | size }}"
 {% for image in site.data.home-carousel %}
 data-img-src-{{ forloop.index | minus: 1 }}="{{ image.path }}"

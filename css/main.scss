@@ -48,9 +48,9 @@ $on-laptop:        800px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "global",
+        "pygment_highlights",
         "main",
         "footer",
         "image",
-        "footer",
-        "pygment_highlights"
+        "footer"        
 ;
